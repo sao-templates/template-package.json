@@ -1,0 +1,11 @@
+{
+  "name": "template-package.json",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:sao-templates/template-package.json.git",
+    "type": "git"
+  },
+  "author": "mo <feng_zilong@163.com>",
+  "license": "MIT"
+}
