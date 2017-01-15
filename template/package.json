@@ -1,0 +1,13 @@
+{
+  "name": "{{{ projectName }}}",
+  "eslintConfig": {
+    "extends": "mo/{{ eslint }}"
+  },
+  "main": "index.js",
+  "author": "{{{ author }}}",
+  "license": "{{ license }}",
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-mo": "latest"
+  }
+}

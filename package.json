@@ -1,9 +1,9 @@
 {
-  "name": "template-package.json",
+  "name": "template-pkg",
   "version": "0.0.0",
   "main": "index.js",
   "repository": {
-    "url": "git@github.com:sao-templates/template-package.json.git",
+    "url": "git@github.com:sao-templates/template-pkg.git",
     "type": "git"
   },
   "author": "mo <feng_zilong@163.com>",
