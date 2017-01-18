@@ -1,9 +1,13 @@
 {
   "name": "{{{ projectName }}}",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
   "eslintConfig": {
     "extends": "mo/{{ eslint }}"
   },
-  "main": "index.js",
   "author": "{{{ author }}}",
   "license": "{{ license }}",
   "devDependencies": {
