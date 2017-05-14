@@ -12,15 +12,6 @@ module.exports = {
 			role: 'git:email',
 			store: true,
 		},
-		eslint: {
-			message: 'Choose an eslint config:',
-			type: 'list',
-			choices: [
-				'esnext',
-				'browser',
-				'electron',
-			],
-		},
 		license: {
 			message: 'Choose a LICENSE:',
 			type: 'list',

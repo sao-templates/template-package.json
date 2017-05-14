@@ -5,13 +5,9 @@
   "scripts": {
     "lint": "eslint src"
   },
-  "eslintConfig": {
-    "extends": "mo/{{ eslint }}"
-  },
   "author": "{{{ author }}}",
   "license": "{{ license }}",
   "devDependencies": {
-    "eslint": "^3.8.1",
-    "eslint-config-mo": "latest"
+    "eslint": "^3.8.1"
   }
 }
