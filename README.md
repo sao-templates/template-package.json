@@ -1,1 +1,3 @@
-# template-package.json
+# template-pkg
+
+package.json template for sao
