@@ -1,6 +1,6 @@
 {
   "name": "template-pkg",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "index.js",
   "repository": {
     "url": "git@github.com:sao-templates/template-pkg.git",
