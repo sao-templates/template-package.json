@@ -1,6 +1,8 @@
+const spawn = require( 'cross-spawn' )
+
 module.exports = {
 	template: 'handlebars',
-	enforceCurrentFolder: true,
+	showTip: true,
 
 	prompts: {
 		projectName: {
@@ -24,13 +26,23 @@ module.exports = {
 			type: 'confirm',
 			default: false,
 		},
+		publish: {
+			message: 'Publish to npm:',
+			type: 'confirm',
+			default: true,
+		}
 	},
 
-	post( { answers, log, folderName, install } ) {
-		log.success( `package.json is successfully generated in ${ folderName }` );
+	post( { answers, install } ) {
+		if ( answers.publish ) {
+			spawn.sync( 'npm', [ 'publish' ], {
+				cwd: process.cwd(),
+				stdio: 'inherit',
+			} )
+		}
 
 		if ( answers.install ) {
-			install();
+			install()
 		}
 	}
-};
+}
