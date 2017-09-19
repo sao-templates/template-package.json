@@ -19,6 +19,7 @@ module.exports = {
 			type: 'list',
 			choices: [
 				'MIT',
+				'ISC',
 			],
 		},
 		install: {
@@ -33,10 +34,10 @@ module.exports = {
 		}
 	},
 
-	post( { answers, install } ) {
+	post( { answers, install, folderPath } ) {
 		if ( answers.publish ) {
 			spawn.sync( 'npm', [ 'publish' ], {
-				cwd: process.cwd(),
+				cwd: folderPath || process.cwd(),
 				stdio: 'inherit',
 			} )
 		}
